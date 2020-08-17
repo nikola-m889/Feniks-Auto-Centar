@@ -1,0 +1,622 @@
+/* Fonts */
+
+@font-face {
+    font-family: Glacial Indifference Regular;
+    src: url('fonts/GlacialIndifference-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Glacial Indifference Bold;
+    src: url('fonts/GlacialIndifference-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+/* Page wrappers */
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+#footer {
+    position: absolute;
+    width: 100%;
+    height: 2.5rem;
+    bottom:0;
+}
+
+/* General settings */
+
+body{
+    background-color: #fff;
+    /*font-family: Glacial Indifference Regular;*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin:0;
+    padding:0;
+}
+
+.container {
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+ul {
+    padding:0;
+    margin:0;
+}
+
+/* Header */
+
+.header-top {
+    background-color: rgb(83, 83, 83);
+    padding: 15px;
+}
+
+
+header {
+    /*font-family: Glacial Indifference Bold;*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background: rgb(247, 245, 245);
+    padding-top: 30px;
+    min-height: 60px;
+    border-bottom: 2px solid rgb(146, 146, 146);
+}
+
+header #logo {
+    float: left;
+    margin:0;
+    padding-bottom: 15px;
+}
+
+header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #111;
+}
+
+header nav {
+    float: right;
+    margin-top: 30px;
+}
+
+header ul {
+    margin:0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    float: left;
+    padding: 0 22px;
+}
+
+/* Showcase */
+
+#showcase {
+    background: url('../img/showcase2.jpg') no-repeat -340px -280px;
+    min-height: 600px;
+    border-top: 2px solid rgb(146, 146, 146);
+}
+
+#showcase-col {
+    width: 50%;
+    float: right;
+    color: white;
+    font-size: 26px;
+    font: bold;
+}
+
+#showcase-col a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#showcase-col h2{
+    margin-top: 39px;
+    font-size: 55px;
+    font-weight: 900;
+}
+
+#showcase-col p {
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+.showcase-link {
+    background-color: teal;
+    width: 200px;
+    height: auto;
+    margin-left: 0;
+    margin-top: 100px;
+    text-align: center;
+    transition: 0.1s ease-in-out;
+}
+
+.span-showcase {
+    text-align: center;
+}
+
+.showcase-link:hover {
+    background-color: #fff;
+    color: #111;
+    text-decoration: none;
+}
+
+/* Models */
+
+.container-models {
+    width: 100%;
+    margin:auto;
+    overflow: hidden;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+#row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.car-column {
+    width: 25%;
+    height: auto;
+    text-align: center;
+}
+
+.car {
+    width:80%;
+    margin:auto;
+}
+
+.h2-models {
+    text-align: center;
+    font-size: 40px;
+}
+
+.p-mod {
+    font-size: 20px;
+}
+
+/* Car */
+
+.container-auto {
+    width: 95%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height:550px;
+    background-image: url("../img/models/Toyota-Camry/camry-main.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.h2-car {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.car-description {
+    margin-top: 20px;
+    width: auto;
+}
+
+.car-small-col img{
+    transition: 0.5s;
+}
+
+.car-small-col img:hover{
+    transform: scale(1.1);
+}
+
+.car-image-col {
+    width: 49%;
+    float:left;
+}
+
+.car-spec-col {
+    width: 49%;
+    float: right;
+}
+
+.car-small-col {
+    width: 40%;
+    height:auto;
+    margin:10px 15px;
+}
+
+.img-proper {
+    max-width: 100%;
+    height:auto;
+}
+
+.img-proper-upper {
+    max-width: 100%;
+    height:auto;
+    margin:auto;
+}
+
+span.left {
+    float: left;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+span.right {
+    float:right;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.specs {
+    width: 90%;
+    margin-top: 45px;
+    
+    
+}
+
+.specs li {
+    list-style:none;
+}
+
+.span-table {
+    font-size: 20px;
+    float: left;
+}
+
+.span-table2 {
+    font-size: 16px;
+    float:right;
+}
+
+/* Servis */
+
+.h3-service {
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 40px;
+
+}
+.p-service {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.div-s {
+    margin: auto;
+    /*border: 1px solid black;*/
+    width: 420px;
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+.p-form {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form-service {
+    margin-left: 30px;
+}
+
+.form-service input{
+    width:350px;
+    height: 35px;
+}
+
+.form-service textarea {
+    width: 350px;
+    height: 120px;
+}
+
+button[type="submit"]{
+    margin-top: 25px;
+    margin-left: 140px;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+}
+
+/* Contact */
+
+.h2-contact {
+    margin-top: 55px;
+}
+
+.contacts {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: auto;
+    height: 300px;
+}
+
+.contact-col {
+    width: 50%;
+    float: left;
+}
+
+.contant-info {
+    width: 50%;
+    float: right;
+}
+
+.contant-info input[type="text"],
+.contant-info input[type="email"]
+ {
+    width: 90%;
+    background-color: rgb(238, 237, 237);
+    border-color: gainsboro;
+}
+
+.contant-info textarea {
+    width: 90%;
+    height: 130px;
+    background: rgb(238, 237, 237);
+    background: rgb(238, 237, 237);
+}
+
+/* Footer */
+
+.footer {
+    background-color: rgb(17, 17, 17);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    display: block;
+}
+
+.footer-top {
+    width: 95%;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.column {
+    width: 25%;
+    padding: 10px 22px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+h1#fo-h1 {
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-size: 26px;
+}
+
+h2#fo-h2 {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color:gray;
+}
+
+ul#ul-footer {
+    list-style: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.5;
+}
+
+ul#ul-footer a {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+ul#ul-footer a:hover {
+    color: orange;
+}
+
+li#fo-li {
+    margin: 8px 0;
+    height: 30px;
+}
+
+.border {
+    height: 2px;
+    width: 40px;
+    background-color: orange;
+}
+
+.social-media i{
+    width: 15px;
+    height: 15px;
+    margin: 20px 5px;
+    padding: 15px ;
+    border-radius: 50%;
+    border: 1px solid  rgb(161, 159, 159);
+    color: #fff;
+    transition: 0.4s;
+}
+
+.social-media i:hover {
+    background-color: rgb(161, 159, 159);
+}
+
+.footer-bottom {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(83, 83, 83);
+    padding: 10px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Responsive css */
+
+@media(max-width:768px) {
+
+    div#logo,
+    #showcase-col,
+    .contact-col,
+    .contant-info,
+    .car-image-col,
+    .car-spec-col{
+        float:none;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    div#logo{
+        padding:0;
+    }
+
+    .showcase-link {
+        float: none;
+        margin:auto;
+        margin-top: 150px;
+    }
+
+    header nav {
+        margin-top:10px;
+    }
+
+    .contant-info {
+        margin-top: 25px;
+    }
+
+    .h2-contact {
+        text-align: center;
+    }
+
+    .car-image-col,
+    .car-spec-col {
+        width: 100%;
+        float:none;
+    }
+
+    .car-spec-col {
+        margin-top: 20px;
+    }
+
+    .car-small-col {
+        width: 100%;
+    }
+
+    .contact-col,
+    .contant-info{
+        margin:auto;
+        float:none;
+    }
+}
+
+/* Responsive Footer */
+
+@media screen and (max-width:1080px){
+
+    .column {
+        width:50%;
+    }
+    .social-media {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .column {
+        width:100%;
+    }
+    .social-media {
+        width: 100%;
+    }
+     h1#fo-h1,
+     h2#fo-h2,
+     p#footer-p,
+     ul#ul-footer,
+     .border,i {
+       text-align: center;
+       margin: auto;
+    }
+    .border {
+        margin-top:7px;
+        margin-bottom: 7px;
+    }
+    .social-media {
+       text-align: center;
+    }
+}
+
+/* Other Responsive Css */
+
+@media screen and (max-width: 1080px) {
+    .car-column {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .car-column {
+        width: 100%;
+    }
+
+    .span-table {
+        font-size: 20px;
+        float: left;
+    }
+    
+    .span-table2 {
+        font-size: 20px;
+        float:right;
+    }
+
+    .specs {
+        width: 100%;
+        margin-top: 45px;      
+    }
+
+    .car-spec-col {
+        width:100%;
+        margin:auto;
+        float:none;
+    }
+
+}
+
+@media(max-width:968px) {
+    .car-image-col,
+    .car-spec-col{
+        float:none;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .car-image-col,
+    .car-spec-col {
+        width: 100%;
+        float:none;
+    }
+
+}
+
+
+

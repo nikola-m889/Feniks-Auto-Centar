@@ -156,7 +156,7 @@ header li {
     text-decoration: none;
 }
 
-/* Models */
+/* Models - main page */
 
 .container-models {
     width: 100%;
@@ -194,6 +194,48 @@ header li {
     font-size: 20px;
 }
 
+/* Models - models */
+
+.container-models {
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.model-types {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.type-choice {
+    margin:10px 30px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.border-model {
+    border-bottom: darkcyan solid 5px;
+}
+
+#id-1,#id-2,#id-3{
+    cursor: pointer;
+}
+
+/* Models - JS */
+
+#id-1-models,
+#id-2-models,
+#id-3-models {
+    display: none;
+    
+}
+
+.view {
+    display: block !important;
+}
+
 /* Car */
 
 .container-auto {
@@ -206,6 +248,36 @@ header li {
     width: 100%;
     height:550px;
     background-image: url("../img/models/Toyota-Camry/camry-main.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.banner-img2 {
+    width: 100%;
+    height:550px;
+    background-image: url("../img/models/Toyota-Auris/auris-main-fullsize-c.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.banner-img3 {
+    width: 100%;
+    height:550px;
+    background-image: url("../img/models/Toyota-Celsior/celsior-main.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.banner-img4 {
+    width: 100%;
+    height:550px;
+    background-image: url("../img/models/Toyota-Venza-Limited/venza-main2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -273,8 +345,6 @@ span.right {
 .specs {
     width: 90%;
     margin-top: 45px;
-    
-    
 }
 
 .specs li {
@@ -376,6 +446,32 @@ button[type="submit"]{
     background: rgb(238, 237, 237);
 }
 
+/* About */
+
+.banner-about {
+    margin-top: 40px;
+    width: 100%;
+    height:450px;
+    background-image: url("../img/toyota_cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.h1-about {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.h2-about {
+    margin-top: 30px;
+    font-size: 26px;
+    color: rgb(24, 24, 24);
+}
+
+
 /* Footer */
 
 .footer {
@@ -445,20 +541,10 @@ li#fo-li {
     background-color: orange;
 }
 
-.social-media i{
-    width: 15px;
-    height: 15px;
-    margin: 20px 5px;
-    padding: 15px ;
-    border-radius: 50%;
-    border: 1px solid  rgb(161, 159, 159);
-    color: #fff;
-    transition: 0.4s;
+.social-media img{
+    margin-right: 4px;
 }
 
-.social-media i:hover {
-    background-color: rgb(161, 159, 159);
-}
 
 .footer-bottom {
     font-family: Arial, Helvetica, sans-serif;
@@ -524,6 +610,10 @@ li#fo-li {
     .contant-info{
         margin:auto;
         float:none;
+    }
+
+    .type-choice {
+        margin:10px 20px;
     }
 }
 
@@ -598,6 +688,17 @@ li#fo-li {
         width:100%;
         margin:auto;
         float:none;
+    }
+
+    /* Models-models */
+    .container-models {
+        width: 90%;
+        margin:auto;
+        overflow: hidden;
+    }
+
+    .type-choice {
+        margin:10px 20px;
     }
 
 }

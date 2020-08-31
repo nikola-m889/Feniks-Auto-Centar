@@ -57,13 +57,62 @@ ul {
     margin:0;
 }
 
-/* Header */
+/* Header-top */
 
 .header-top {
     background-color: rgb(83, 83, 83);
-    padding: 15px;
+    height: 28px;
+    display: flex;
+    width: 100%;
 }
 
+.header-top a {
+    color: rgb(241, 241, 241);
+}
+
+.header-top a:hover {
+    color:rgb(5, 172, 172);
+}
+
+.div-top-1 {
+    width: 250px;
+    display: inline;
+    overflow:hidden;
+}
+
+.div-top-2 {
+    width: 320px;
+    display: inline;
+}
+
+.div-top-3 {
+    width: 320px;
+    display: inline;
+}
+
+.phone-div {
+    margin-left: 50px;
+    color: rgb(241, 241, 241);
+}
+
+.mail-div {
+    color: rgb(241, 241, 241);
+    margin-left: 20px;
+}
+
+.servis-div {
+    float: right;
+    margin-right: 50px;
+    color: rgb(241, 241, 241);
+    right:0;
+    position: absolute;
+}
+
+.servis-div a,.phone-div a,.mail-div a {
+    transition: 0.3s;
+}
+
+/* Header-main */
 
 header {
     /*font-family: Glacial Indifference Bold;*/
@@ -78,7 +127,8 @@ header {
 header #logo {
     float: left;
     margin:0;
-    padding-bottom: 15px;
+    padding: 0;
+    margin-bottom: 10px;
 }
 
 header a {
@@ -86,6 +136,7 @@ header a {
     text-transform: uppercase;
     font-size: 17px;
     color: #111;
+    transition: 0.3s;
 }
 
 header nav {
@@ -103,6 +154,12 @@ header li {
     float: left;
     padding: 0 22px;
 }
+
+header a:hover {
+    text-decoration: none;
+    color: darkcyan;
+}
+
 
 /* Showcase */
 
@@ -143,7 +200,7 @@ header li {
     margin-left: 0;
     margin-top: 100px;
     text-align: center;
-    transition: 0.1s ease-in-out;
+    transition: 0.3s;
 }
 
 .span-showcase {
@@ -151,12 +208,12 @@ header li {
 }
 
 .showcase-link:hover {
-    background-color: #fff;
-    color: #111;
+    background-color: rgb(1, 90, 90);
+    color: #fff;
     text-decoration: none;
 }
 
-/* Models */
+/* Models - main page */
 
 .container-models {
     width: 100%;
@@ -186,12 +243,56 @@ header li {
 }
 
 .h2-models {
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 40px;
 }
 
 .p-mod {
     font-size: 20px;
+}
+
+/* Models - models */
+
+.container-models {
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.model-types {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.type-choice {
+    margin:10px 30px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.border-model {
+    border-bottom: darkcyan solid 5px;
+}
+
+#id-1,#id-2,#id-3{
+    cursor: pointer;
+}
+
+/* Models - JS */
+
+#id-1-models,
+#id-2-models,
+#id-3-models {
+    display: none;
+    
+}
+
+.view {
+    display: block !important;
 }
 
 /* Car */
@@ -212,10 +313,57 @@ header li {
     display: table;
 }
 
+.banner-img2 {
+    width: 100%;
+    height:550px;
+    background-image: url("../img/models/Toyota-Auris/auris-main-fullsize-c.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.banner-img3 {
+    width: 100%;
+    height:550px;
+    background-image: url("../img/models/Toyota-Celsior/celsior-main.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.banner-img4 {
+    width: 100%;
+    height:550px;
+    background-image: url("../img/models/Toyota-Venza-Limited/venza-main2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.banner-img5 {
+    width: 100%;
+    height:550px;
+    background-image: url("../img/models/Toyota-Vellfire/toyota-vellfire-main-min.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
 .h2-car {
     margin-top: 25px;
     margin-bottom: 40px;
     text-align: center;
+}
+
+.h3-car {
+    margin-top: 65px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 22px;
 }
 
 .car-description {
@@ -270,26 +418,19 @@ span.right {
     font-weight: 600;
 }
 
-.specs {
-    width: 90%;
-    margin-top: 45px;
-    
-    
+table {
+    margin-top: 10px;
 }
 
-.specs li {
-    list-style:none;
+.yt-video {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    overflow: hidden;
 }
 
-.span-table {
-    font-size: 20px;
-    float: left;
-}
-
-.span-table2 {
-    font-size: 16px;
-    float:right;
-}
 
 /* Servis */
 
@@ -338,17 +479,92 @@ button[type="submit"]{
     padding: 10px 25px;
 }
 
+/* About */
+
+.banner-about {
+    margin-top: 40px;
+    width: 100%;
+    height:450px;
+    background-image: url("../img/toyota_cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.h1-about {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.h2-about {
+    margin-top: 30px;
+    font-size: 26px;
+    color: rgb(24, 24, 24);
+}
+
+/* Vesti */
+
+.h1-vesti {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.row-news {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+.column-news {
+    max-width: 30%;
+    display: inline-block;
+    overflow: hidden;
+    margin: 5px 9px 5px 9px;
+}
+
+.image-news {
+    overflow: hidden;
+}
+
+.image-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.h3-vesti {
+    font-size: 22px;
+}
+
+.news-title a{
+    text-decoration: none;
+    color: #161616;
+    transition: 0.3s;
+}
+
+.news-title a:hover {
+    color:darkcyan;
+}
+
 /* Contact */
 
 .h2-contact {
     margin-top: 55px;
 }
 
+.h3-vreme {
+    margin-bottom: 20px;
+}
+
 .contacts {
     margin-top: 50px;
     margin-bottom: 50px;
     width: auto;
-    height: 300px;
+    height: auto;
 }
 
 .contact-col {
@@ -376,9 +592,27 @@ button[type="submit"]{
     background: rgb(238, 237, 237);
 }
 
+.radno-vreme {
+    margin-top: 50px;
+}
+
+.table-vreme {
+    margin: auto;
+}
+
+.table-vreme td {
+    padding-right: 40px;
+    padding-bottom: 10px;
+}
+
+.table-vreme td:nth-child(1) {
+   padding-right: 20px;
+}
+
 /* Footer */
 
 .footer {
+    margin-top: 20px;
     background-color: rgb(17, 17, 17);
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
@@ -431,7 +665,7 @@ ul#ul-footer a {
 }
 
 ul#ul-footer a:hover {
-    color: orange;
+    color: darkcyan;
 }
 
 li#fo-li {
@@ -445,20 +679,10 @@ li#fo-li {
     background-color: orange;
 }
 
-.social-media i{
-    width: 15px;
-    height: 15px;
-    margin: 20px 5px;
-    padding: 15px ;
-    border-radius: 50%;
-    border: 1px solid  rgb(161, 159, 159);
-    color: #fff;
-    transition: 0.4s;
+.social-media img{
+    margin-right: 4px;
 }
 
-.social-media i:hover {
-    background-color: rgb(161, 159, 159);
-}
 
 .footer-bottom {
     font-family: Arial, Helvetica, sans-serif;
@@ -525,6 +749,28 @@ li#fo-li {
         margin:auto;
         float:none;
     }
+
+    .type-choice {
+        margin:10px 20px;
+    }
+
+    .column-news {
+        max-width: 100%;
+    }
+
+    .price {
+        margin-top: 22px;
+    }
+
+    .h3-car {
+        margin-top: 35px;
+        font-size: 22px;
+    }
+
+    .radno-vreme {
+        display: none;
+    }
+
 }
 
 /* Responsive Footer */
@@ -567,14 +813,87 @@ li#fo-li {
 /* Other Responsive Css */
 
 @media screen and (max-width: 1080px) {
+   
+    /* header-top */
+    .div-top-1 {
+        width: 320px;
+    }
+
+    .div-top-2 {
+        width: 370px;
+    }
+
+    .div-top-3 {
+        width: 600px;
+        display: inline;
+    }
+
+    .phone-div {
+        margin-left: 20px;
+    }
+
+    .mail-div {
+        margin-left: 10px;
+    }
+
+    .servis-div {
+        margin-left: 10px;
+    }
+
+    header nav {
+        float: right;
+        margin-top: 10px;
+    }
+
+    header#logo {
+        float: left;
+        margin:0;
+        padding: 0;
+    }
+
     .car-column {
         width: 50%;
         margin-bottom: 10px;
     }
+
     
 }
 
 @media screen and (max-width: 600px) {
+
+    /* header-top */
+
+    .div-top-1 {
+        width: 200px;
+        display: inline;
+        overflow:hidden;
+    }
+    
+    .div-top-2 {
+        width: 250px;
+        display: inline;
+    }
+    
+    .div-top-3 {
+        width: 200px;
+        display: inline;
+    }
+
+    .phone-div {
+        margin-left: 10px;
+        color: rgb(241, 241, 241);
+        font-size: 15px;
+    }
+
+    .mail-div {
+        font-size: 15px;
+        margin-left: 20px;
+    }
+
+    .servis-div {
+        margin-right: 10px;
+    }
+
     .car-column {
         width: 100%;
     }
@@ -589,15 +908,26 @@ li#fo-li {
         float:right;
     }
 
-    .specs {
-        width: 100%;
-        margin-top: 45px;      
-    }
-
     .car-spec-col {
         width:100%;
         margin:auto;
         float:none;
+    }
+
+    /* Models-models */
+    .container-models {
+        width: 90%;
+        margin:auto;
+        overflow: hidden;
+    }
+
+    .type-choice {
+        margin:10px 20px;
+    }
+
+    .column-news {
+        max-width: 100%;
+        margin-top: 15px;
     }
 
 }
@@ -615,6 +945,7 @@ li#fo-li {
         width: 100%;
         float:none;
     }
+
 
 }
 
